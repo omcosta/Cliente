@@ -61,12 +61,15 @@ type
     edDDD: TEdit;
     Label18: TLabel;
     edPorta: TEdit;
+    Label19: TLabel;
     procedure edCEPExit(Sender: TObject);
     procedure FormKeyDown(Sender: TObject; var Key: Word;
       Shift: TShiftState);
     procedure btnFecharClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure btnEMailClick(Sender: TObject);
+    procedure edEmailExit(Sender: TObject);
+    procedure edUsuarioExit(Sender: TObject);
   private
     { Private declarations }
     function RemoveCaractere(s: String): String;
@@ -142,10 +145,10 @@ begin
   LHandler := TIdSSLIOHandlerSocketOpenSSL.Create(nil);
 
   IdHTTP.IOHandler := LHandler;
-  // IdHTTP.HTTPOptions := [hoForceEncodeParams];
   IdHTTP.ReadTimeout := 5000;
-  IdHTTP.Request.ContentType := 'utf-16'; // 'application/json:odata=light;charset=utf-8;';
-  IdHTTP.Request.CharSet := 'utf-16';
+  IdHTTP.Request.ContentType := 'application/json:odata=light;charset=utf-8;';
+  IdHTTP.Request.CharSet := 'utf-8';
+  IdHTTP.Request.UserAgent := 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/20100101 Firefox/12.0';
 
   try
     // Cria uma Lista de Strings
@@ -342,6 +345,24 @@ begin
   end;
 end;
 
+
+procedure TfrmCliente.edEmailExit(Sender: TObject);
+begin
+  if (edEmail.Text <> '') and (Pos('@', edEmail.Text) = 0) then
+  begin
+    MessageDlg('Endereço de Email inválido!', mtInformation, [mbOK], 0);
+    edEmail.SetFocus;
+  end;
+end;
+
+procedure TfrmCliente.edUsuarioExit(Sender: TObject);
+begin
+  if (edUsuario.Text <> '') and (Pos('@', edUsuario.Text) = 0) then
+  begin
+    MessageDlg('Endereço de Email inválido!', mtInformation, [mbOK], 0);
+    edUsuario.SetFocus;
+  end;
+end;
 
 end.
 

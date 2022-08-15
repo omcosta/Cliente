@@ -359,14 +359,14 @@ object frmCliente: TfrmCliente
       object Label11: TLabel
         Left = 9
         Top = 63
-        Width = 25
+        Width = 36
         Height = 13
-        Caption = 'Email'
+        Caption = '*Email'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clMaroon
         Font.Height = -11
         Font.Name = 'MS Sans Serif'
-        Font.Style = []
+        Font.Style = [fsBold]
         ParentFont = False
       end
       object Label10: TLabel
@@ -450,6 +450,7 @@ object frmCliente: TfrmCliente
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 3
+        OnExit = edEmailExit
       end
       object edTelefone: TEdit
         Left = 357
@@ -505,44 +506,44 @@ object frmCliente: TfrmCliente
       object Label20: TLabel
         Left = 8
         Top = 21
-        Width = 33
+        Width = 44
         Height = 13
-        Caption = 'SMTP:'
+        Caption = '*SMTP:'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clMaroon
         Font.Height = -11
         Font.Name = 'MS Sans Serif'
-        Font.Style = []
+        Font.Style = [fsBold]
         ParentFont = False
       end
       object Label16: TLabel
         Left = 8
         Top = 49
-        Width = 39
+        Width = 53
         Height = 13
-        Caption = 'Usu'#225'rio:'
+        Caption = '*Usu'#225'rio:'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clMaroon
         Font.Height = -11
         Font.Name = 'MS Sans Serif'
-        Font.Style = []
+        Font.Style = [fsBold]
         ParentFont = False
       end
       object Label17: TLabel
         Left = 8
         Top = 77
-        Width = 34
+        Width = 46
         Height = 13
-        Caption = 'Senha:'
+        Caption = '*Senha:'
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
+        Font.Color = clMaroon
         Font.Height = -11
         Font.Name = 'MS Sans Serif'
-        Font.Style = []
+        Font.Style = [fsBold]
         ParentFont = False
       end
       object Label18: TLabel
-        Left = 303
+        Left = 314
         Top = 21
         Width = 28
         Height = 13
@@ -555,7 +556,7 @@ object frmCliente: TfrmCliente
         ParentFont = False
       end
       object edSmtp: TEdit
-        Left = 50
+        Left = 62
         Top = 18
         Width = 230
         Height = 21
@@ -578,7 +579,7 @@ object frmCliente: TfrmCliente
         OnClick = btnEMailClick
       end
       object edUsuario: TEdit
-        Left = 50
+        Left = 62
         Top = 46
         Width = 230
         Height = 21
@@ -590,9 +591,10 @@ object frmCliente: TfrmCliente
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 1
+        OnExit = edUsuarioExit
       end
       object edSenha: TEdit
-        Left = 50
+        Left = 62
         Top = 74
         Width = 230
         Height = 21
@@ -607,7 +609,7 @@ object frmCliente: TfrmCliente
         TabOrder = 2
       end
       object edPorta: TEdit
-        Left = 335
+        Left = 345
         Top = 18
         Width = 35
         Height = 21
@@ -630,6 +632,19 @@ object frmCliente: TfrmCliente
     Height = 41
     Align = alBottom
     TabOrder = 2
+    object Label19: TLabel
+      Left = 20
+      Top = 12
+      Width = 214
+      Height = 13
+      Caption = 'Campo marcado com [*] '#233' obrigat'#243'rio.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
     object btnFechar: TBitBtn
       Left = 498
       Top = 7

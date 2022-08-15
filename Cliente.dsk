@@ -1,14 +1,14 @@
 [Closed Files]
-File_0=SourceModule,'G:\Desenvolvimento\InfoSistemas\ProjetoClientes\uCliente.pas',0,1,314,1,344,1,0
-File_1=SourceModule,'G:\Desenvolvimento\InfoSistemas\uCliente.pas',0,1,1,66,21,1,0
-File_2=SourceModule,'D:\Exito\D7\componentes\terceiros\Indynovo10\Lib\Protocols\IdReplySMTP.pas',0,1,485,1,503,0,0
-File_3=SourceModule,'D:\Exito\D7\componentes\terceiros\Indynovo10\Lib\Protocols\IdSSLOpenSSLHeaders.pas',0,1,19468,1,19482,0,0
-File_4=SourceModule,'D:\exito\d7\CompraAgil\UMovPedidoDespesa.pas',0,1,3156,20,3157,0,0
-File_5=SourceModule,'D:\Exito\D7\componentes\terceiros\Indynovo10\Lib\Protocols\IdSSLOpenSSL.pas',0,1,3006,1,3022,0,0
-File_6=SourceModule,'D:\Exito\D7\componentes\terceiros\Indynovo10\Lib\Protocols\IdSMTPBase.pas',0,1,518,1,554,0,0
-File_7=SourceModule,'D:\Exito\D7\componentes\terceiros\Indynovo10\Lib\Core\IdTCPConnection.pas',0,1,909,1,925,0,0
-File_8=SourceModule,'D:\Exito\D7\componentes\terceiros\Indynovo10\Lib\Protocols\IdSMTP.pas',0,1,446,56,465,0,0
-File_9=SourceModule,'D:\Exito\D7\componentes\terceiros\Indynovo10\Lib\System\IdStack.pas',0,1,955,1,971,0,0
+File_0=SourceModule,'D:\Exito\D7\componentes\terceiros\Indynovo10\Lib\System\IdStack.pas',0,1,953,1,971,0,0
+File_1=SourceModule,'D:\Exito\D7\componentes\terceiros\Indynovo10\Lib\Protocols\IdReplySMTP.pas',0,1,487,1,503,0,0
+File_2=SourceModule,'G:\Desenvolvimento\InfoSistemas\ProjetoClientes\uCliente.pas',0,1,314,1,344,1,0
+File_3=SourceModule,'G:\Desenvolvimento\InfoSistemas\uCliente.pas',0,1,1,66,21,1,0
+File_4=SourceModule,'D:\Exito\D7\componentes\terceiros\Indynovo10\Lib\Protocols\IdSSLOpenSSLHeaders.pas',0,1,19468,1,19482,0,0
+File_5=SourceModule,'D:\exito\d7\CompraAgil\UMovPedidoDespesa.pas',0,1,3156,20,3157,0,0
+File_6=SourceModule,'D:\Exito\D7\componentes\terceiros\Indynovo10\Lib\Protocols\IdSSLOpenSSL.pas',0,1,3006,1,3022,0,0
+File_7=SourceModule,'D:\Exito\D7\componentes\terceiros\Indynovo10\Lib\Protocols\IdSMTPBase.pas',0,1,518,1,554,0,0
+File_8=SourceModule,'D:\Exito\D7\componentes\terceiros\Indynovo10\Lib\Core\IdTCPConnection.pas',0,1,909,1,925,0,0
+File_9=SourceModule,'D:\Exito\D7\componentes\terceiros\Indynovo10\Lib\Protocols\IdSMTP.pas',0,1,446,56,465,0,0
 
 [Modules]
 Module0=G:\Desenvolvimento\InfoSistemas\Cliente\uCliente.pas
@@ -57,9 +57,9 @@ BottomPanelData=00000400000000001905000000000000025F0000000000000001000000000000
 
 [View0]
 Module=G:\Desenvolvimento\InfoSistemas\Cliente\uCliente.pas
-CursorX=40
-CursorY=148
-TopLine=133
+CursorX=7
+CursorY=364
+TopLine=343
 LeftCol=1
 
 [Watches]
@@ -167,8 +167,8 @@ LRDockWidth=190
 Dockable=1
 SplitPos=124
 ArrangeBy=Name
-SelectedItem=Request
-ExpandedItems=Connection,DataBinding,Font.Style,Properties,ProviderFlags,ProxyParams,TagFont,TagFont.Style,TagInfo
+SelectedItem=Text
+ExpandedItems=Connection,DataBinding,Font,Font.Style,Properties,ProviderFlags,ProxyParams,TagFont,TagFont.Style,TagInfo
 HiddenCategories=
 
 [CallStackWindow]
